@@ -1,20 +1,13 @@
-# sum = 0
-# for i in range(1, 51):
-#     sum += i
-#
-# print("The sum of numbers from 1 to 50 is:", sum)
-from math import *
-n=int(input("Enter the number:"))
-print("Square Root:", sqrt(n))
-print("Logarithm:", log(n))
-print("Sine:", sin(n))
+user_input=input("Enter text to write to the file")
+file=open('output.txt', 'w')
+file.write(user_input + '\n')
+print("Data successfully added to output.txt")
 
+additional_input=input("Enter additional text to append")
+file=open('output.txt','a')
+file.write(additional_input + '\n')
+print("Data successfully appended")
 
-
-
-
-
-
-
-
-
+with open ('output.txt') as file:
+    reading_file=file.read()
+print(reading_file)
