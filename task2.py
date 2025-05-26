@@ -1,13 +1,6 @@
-user_input=input("Enter text to write to the file")
-file=open('output.txt', 'w')
-file.write(user_input + '\n')
-print("Data successfully added to output.txt")
-
-additional_input=input("Enter additional text to append")
-file=open('output.txt','a')
-file.write(additional_input + '\n')
-print("Data successfully appended")
-
-with open ('output.txt') as file:
-    reading_file=file.read()
-print(reading_file)
+original_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+extracted_list = original_list[0:5]
+print("Original List:", original_list)
+print("Extracted List:", extracted_list)
+extracted_list.reverse()
+print("Reversed Extracted List:", extracted_list)

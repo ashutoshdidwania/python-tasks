@@ -1,7 +1,12 @@
-try:
-    file=open('sample.txt','r')
-    reading_file=file.read()
-    print(reading_file)
-except:
-    print("The file sample.txt was not found")
-
+student_marks = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 88,
+    "Eva": 91
+}
+student_name = input("Enter the student's name: ")
+if student_name in student_marks:
+    print(f"{student_name}'s marks: {student_marks[student_name]}")
+else:
+    print(f"Student '{student_name}' not found in the records.")
